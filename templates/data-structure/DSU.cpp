@@ -25,8 +25,11 @@ public:
 			return false;
 		parent[x] = y;
 		size[y] += size[x];
-		size[x] = size[y];
 		cc--;
 		return true;
+	}
+
+	int get_size(int x) {
+		return size[find(x)];
 	}
 };
