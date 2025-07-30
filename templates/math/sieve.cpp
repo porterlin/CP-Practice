@@ -1,4 +1,4 @@
-vector<bool> is_prime;
+vector<int> is_prime;
 vector<int> primes;
 
 void sieve(int n) {
