@@ -130,6 +130,7 @@
 |3489|[Zero Array Transformation IV](https://leetcode.com/problems/zero-array-transformation-iv/)|看完 leetcode hint 後有做出來|
 |721|[Accounts Merge](https://leetcode.com/problems/accounts-merge/)|小複雜|
 |1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|寫的時候差一點點而已，思路要轉換一下，用大根堆|
+|1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)|完全想不到|
 
 ## Too Hard
 | # | Title |
