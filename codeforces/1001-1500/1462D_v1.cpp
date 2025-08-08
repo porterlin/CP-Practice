@@ -9,43 +9,36 @@ void solve() {
 	int n;
 	cin >> n;
 
+	i64 sum = 0;
 	vector<i64> a(n);
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
+		sum += a[i];
 	}
 
-	auto check_equal = [](vector<i64>& a) -> bool {
-		for (int i = 1; i < a.size(); i++) {
-			if (a[i] != a[i - 1]) {
-				return false;
-			}
+	for (int k = n; k > 0; k--) {
+		if (sum % k) {
+			continue;
 		}
-		return true;
-	};
 
-	int cnt = 0;
-	while (!check_equal(a)) {
-		// for (auto& b : a) {
-		// 	cout << b << " ";
-		// }
-		// cout << endl;
-		i64 idx = min_element(a.begin(), a.end()) - a.begin();
-		if (idx == 0) {
-			a[idx + 1] += a[idx];
-		} else if (idx == a.size() - 1) {
-			a[idx - 1] += a[idx];
-		} else {
-			if (a[idx - 1] < a[idx + 1]) {
-				a[idx - 1] += a[idx];
-			} else {
-				a[idx + 1] += a[idx];
+		bool ok = true;
+		i64 seg = sum / k, seg_sum = 0;
+		for (int i = 0; i < n; i++) {
+			if (seg_sum == seg) {
+				seg_sum = 0;
+			}
+			seg_sum += a[i];
+			if (seg_sum > seg) {
+				ok = false;
+				break;
 			}
 		}
-		a.erase(a.begin() + idx);
-		cnt++;
+
+		if (ok) {
+			cout << n - k << "\n";
+			return;
+		}
 	}
-
-	cout << cnt << "\n";
 }
 
 int main() {
