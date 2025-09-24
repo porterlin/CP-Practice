@@ -132,6 +132,7 @@
 |1514|[Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|寫的時候差一點點而已，思路要轉換一下，用大根堆|
 |1049|[Last Stone Weight II](https://leetcode.com/problems/last-stone-weight-ii/)|完全想不到|
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet/)|看了題解還是感覺有點難想|
+|3072|[Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/)|寫 fenwick tree 的第二道題目，當時還在熟悉所以大概想了一下就去看題解|
 
 ## Too Hard
 | # | Title |
