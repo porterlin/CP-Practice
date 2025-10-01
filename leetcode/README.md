@@ -134,6 +134,7 @@
 |853|[Car Fleet](https://leetcode.com/problems/car-fleet/)|看了題解還是感覺有點難想|
 |3072|[Distribute Elements Into Two Arrays II](https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/)|寫 fenwick tree 的第二道題目，當時還在熟悉所以大概想了一下就去看題解|
 |1409|[Queries on a Permutation With Key](https://leetcode.com/problems/queries-on-a-permutation-with-key/)|暴力會，但 Fenwick tree 的解法不好發想|
+|132|[Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)||
 
 ## Too Hard
 | # | Title |
